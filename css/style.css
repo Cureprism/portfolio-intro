@@ -1,0 +1,210 @@
+/* ===== ブラウザごとにバラバラなデフォルトの余白やスタイルをリセット ===== */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+/* ===== 基本設定 ===== */
+body {
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ===== ヘッダー ===== */
+.site-header {
+    background-color: #333;
+    color: #fff;
+    position: fixed; /* 常に上に固定 */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #00bcd4;
+}
+
+/* ===== mainの基本余白 ===== */
+main {
+    margin-top: 80px; /* ヘッダーの高さ分 */
+    padding: 20px;
+}
+
+/* ===== Aboutセクション ===== */
+.about-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Skillsセクション ===== */
+.skills-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #333;
+    border-bottom: 2px solid #00bcd4;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skill-block {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.skill-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+.skill-block p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* ===== Worksセクション ===== */
+.works-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.works-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* 画面幅が狭いときは自動で折り返し */
+}
+
+.work-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+}
+
+.work-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.work-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.work-item a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.work-item a:hover {
+    text-decoration: underline;
+}
+
+.work-item p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== Contactセクション ===== */
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    color: #777;
+    font-size: 1rem;
+}
+
+/* ===== フッター ===== */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.site-footer p {
+    margin: 0;
+}

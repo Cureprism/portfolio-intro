@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Intro</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>ポートフォリオ準備中</h1>
-    <p>ここに自己紹介ページを作っていきます。</p>
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">                       <!--検索エンジンに「ここがヘッダーですよ」と明示する-->
+<div class="container">
+    <h1 class="logo">My Portfolio</h1>             <!--ページ全体で最も重要な見出し-->
+    <nav class="nav">                              <!--ナビゲーション（メニュー）を表すタグ-->   
+    <ul>                                           <!--メニュー項目をリスト形式でまとめる-->
+        <li><a href="#about">About</a></li>        
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+</div>
+</header>
+
+<!-- 後でここに各セクションを追加していきます -->
+<main>                                            <!--ページの“主たる内容”。ページごとに1回しか使えない-->
+<!--Aboutセクション-->
+<section id="about" class="about-section">                              <!--内容的にひとまとまりのテーマ（セクション）-->
+    <div class="profile">
+        <img src="img/profile.jpg" alt="プロフィール写真" class="profile-img">
+    </div>
+    <h2>About</h2>
+    <p>
+        はじめまして。データサイエンスや品質保証を中心にキャリアを築いてきました。<br>
+        現在はIT領域にも軸足を広げ、RAGやAI活用など、知識と構造を結びつける分野に関心を持っています。
+    </p>
+</section>
+<!--Skillsセクション-->
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skill-block">
+    <h3>💻 SAS</h3>
+    <p>
+        SAS SQLによるデータ抽出・加工・前処理、探索的分析／グラフ作成（SAS Graph）、統計学に基づく検証的分析（主に仮説検定）ができます。統計検定2級取得
+    </p>
+    </div>
+    <div class="skill-block">
+    <h3>🐍 Python</h3>
+    <p>
+        RAGを活用した社内情報検索チャットボットをAzure上に構築した経験があります。フレームワークやライブラリを活用したデータ分析やアプリケーション開発ができます
+    </p>
+    </div>
+    <div class="skill-block">
+    <h3>🧾 ドキュメンテーション / QC・QA</h3>
+    <p>
+        医薬品業界にて、治験関連文書の校正・校閲業務に従事。複雑な情報を正確かつ論理的に文書化するスキルと、表記統一、数値確認等、細部まで見逃さない注意力を有しています。品質管理検定2級取得
+    </p>
+    </div>
+    <div class="skill-block">
+    <h3>🌐 Web開発</h3>
+    <p>
+        テックアイエスにてHTML/CSS、PHP、MySQL、Laravel、JavaScriptを中心にWeb開発を学習中
+    </p>
+    </div>
+</section>
+<!--Worksセクション-->
+<section id="works" class="works-section">
+    <h2>Works</h2>
+    <div class="works-container">
+
+    <div class="work-item">
+        <img src="https://placehold.co/300x200" alt="ポートフォリオサイト" class="work-img">
+        <h3><a href="#" target="_blank">ポートフォリオサイト</a></h3>
+        <p>本サイト。HTML/CSSを中心に構築し、自己紹介・スキル・制作物を整理したページです。</p>
+    </div>
+
+    <div class="work-item">
+        <img src="https://placehold.co/300x200" alt="RAGデモアプリ" class="work-img">
+        <h3><a href="#" target="_blank">RAGデモアプリ</a></h3>
+        <p>Azure OpenAIとCognitive Searchを活用した社内情報検索チャットボットを構築しました。</p>
+    </div>
+
+    <div class="work-item">
+        <img src="https://placehold.co/300x200" alt="データ分析レポート" class="work-img">
+        <h3><a href="#" target="_blank">データ分析レポート</a></h3>
+        <p>Pythonを用いたデータ分析・可視化を実施し、結果をレポート形式でまとめました。</p>
+    </div>
+
+</div>
+</section>
+<!--Contactセクション-->
+<section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <p>現在準備中です。</p>
+</section>
+</main>
+<!-- ===== フッター ===== -->
+<footer class="site-footer">
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
